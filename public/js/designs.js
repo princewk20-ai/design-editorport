@@ -1,4 +1,4 @@
-// File: public/js/designs.js
+// File: js/designs.js
 
 // Sample data for designs
 const designsData = [
