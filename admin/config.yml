@@ -1,0 +1,30 @@
+# File: admin/config.yml
+backend:
+  name: git-gateway
+  branch: main  # replace with your main branch name
+
+media_folder: "public/uploads"  # folder for uploaded images
+public_folder: "/uploads"
+
+collections:
+  - name: "announcements"
+    label: "Announcements"
+    folder: "content/announcements"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+  - name: "designs"
+    label: "Designs"
+    folder: "content/designs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Label", name: "label", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Description", name: "body", widget: "markdown" }
