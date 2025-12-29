@@ -1,4 +1,4 @@
-// File: public/js/announcements.js
+// File: js/announcements.js
 
 // Dynamically load announcements from content folder (via CMS or JSON)
 const announcementsData = [
